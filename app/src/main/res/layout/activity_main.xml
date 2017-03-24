@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.zxing.MainActivity">
+
+<Button
+    android:id="@+id/btn_scan"
+    android:text="掃一掃"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="scan"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:text="掃描的結果為："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_build_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="make"
+        android:text="生成二維碼"/>
+    <CheckBox
+        android:text="使用自定義的Logo"
+        android:id="@+id/checkbox_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/scan_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"/>
+
+</LinearLayout>
